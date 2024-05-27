@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chi tiết Notification</title>
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</head>
+
+<body>
+    <div class="d-flex p-3">
+        <div class="col-2 d-flex mt-2">
+            <h3 class="text-warning">Dash</h3>
+            <h3>Stack</h3>
+        </div>
+        <div class="d-flex col-8 search-bar">
+            <input class="rounded border p-2 flex-grow-1" type="search" id="Search" name="Search" placeholder="Search">
+            <div class="rounded border p-2 search-icon">
+                <box-icon name='search-alt-2'></box-icon>
+            </div>
+        </div>
+        <div class="col-2 d-flex align-items-center">
+            <img class="rounded-circle"
+                src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/441896982_468941275705779_8833872038159045775_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHWf2-V7Q_xvNgsmpMzxECp9W3zwU2XQ4b1bfPBTZdDhgZl-k3GcXU2XyUoYQ1JeWSN9rj2gZAI6YbC0zqrbH46&_nc_ohc=Qblm2en8QaoQ7kNvgFPYFH_&_nc_ht=scontent.fsgn5-11.fna&oh=00_AYAuKh_-44NKRGhpbF94v-OZl4Q9z3eggOtdEyFY71iEqQ&oe=665290DC"
+                alt="Profile Image" style="width: 40px; height: 40px" />
+            <p class="text-center m-0 px-2">Nguyen Phuoc Chung</p>
+            <div class="align-content-center mt-2">
+                <box-icon name='exit'></box-icon>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="col-2 bg-white p-3 border" id="menu">
+            <div class="float-end" id="menu_icon_dashboard" onclick="toggleMenu()">
+                <box-icon name='menu'></box-icon>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon type='solid' name='dashboard'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">DASHBOARD</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon type='solid' name='grid'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">MANAGE TOUR</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon name='happy-heart-eyes'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">FAVORITES</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon name='messenger' type='logo'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">MESSENGER</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon name='list-check'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">ORDER LIST</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3 active-page">
+                <box-icon name='bell-ring' type='solid'></box-icon>
+                <p class="mb-0 ms-2"><a href="./index.html">NOTIFICATION</a></p>
+            </div>
+            <hr />
+            <div class="d-flex align-items-center mb-3">
+                <box-icon name='user'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">MANAGE USER</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon name='user-circle' type='solid'></box-icon>
+                <p class="mb-0 ms-2"><a href="#">PROFILE</a></p>
+            </div>
+            <div class="d-flex align-items-center mb-3">
+                <box-icon name='contact' type='solid'></box-icon>
+                <p class="mb-0 ms-2"><a href="ManageContact.jsp">MANAGE CONTACT</a></p>
+            </div>
+        </div>
+        <div class="col-10 bg-light p-3 border" id="list">
+            <div id="menu_icon" onclick="toggleMenu()">
+                <box-icon name='menu'></box-icon>
+            </div>
+            <img id="im"
+                src="https://scontent.fsgn5-5.fna.fbcdn.net/v/t39.30808-6/444500308_1056366042525414_7013205239594077953_n.jpg?stp=dst-jpg_p526x296&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHCp6HPCvMyuK-0rsrcMV8GWTgyBB-sLBNZODIEH6wsE3HgojYx1UXnaBYWHpAWpjijUQPkeykMW6IlE1nCWayU&_nc_ohc=WqZTXoJ75igQ7kNvgHsPIqt&_nc_ht=scontent.fsgn5-5.fna&oh=00_AYBg9_urIwU6vlt4lwuA5Qeg2AONhYcoVtqbd0kUzkg8xQ&oe=665A1727"
+                class="img-fluid" alt="Promotion Image">
+            <h4 class="d-flex">
+                <a href="./index.html"> Notification/</a><p class="text-decoration-underline">Detail</p>
+            </h4>
+            <div class="header mt-4">
+                <div class="title-section">
+                    <h1 style="font-size: 34px;">Giảm Giá Đặc Biệt cho Du Khách Quốc Tế Mùa Hè Này!</h1>
+                    <div class="details d-flex justify-content-between">
+                        <div>
+                            <span class="sale-label">Sale</span>
+                            <span class="date mt-1">20-5-2024</span>
+                        </div>
+                        <div class="share-button me-4" onclick="shareContent()">
+                            <box-icon name='share-alt'></box-icon>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="container mt-4">
+                <p class="fw-semibold" style="font-size: 20px;">Khám phá vẻ đẹp của Việt Nam với giá ưu đãi!</p>
+                <p class="fw-normal" style="font-size: 16px;">Mùa hè này, Vietnam Travel hân hạnh giới thiệu chương
+                    trình
+                    khuyến mãi đặc biệt dành cho du khách quốc tế. Hãy tận hưởng chuyến du lịch đến các điểm đến nổi
+                    tiếng như Hà Nội, Hồ Chí Minh, Đà Nẵng, Hội An và nhiều hơn nữa với mức giảm giá lên đến 30% cho các
+                    tour du lịch và dịch vụ khách sạn.
+                </p>
+                <ul class="fw-semibold" style="font-size: 20px;">Ưu đãi bao gồm:</ul>
+                <li class="fw-normal" style="font-size: 16px;">Giảm giá 30% cho tất cả các tour du lịch.</li>
+                <li class="fw-normal" style="font-size: 16px;">Giảm giá 20% cho dịch vụ khách sạn và resort.</li>
+                <li class="fw-normal" style="font-size: 16px;">Ưu đãi đặc biệt cho các tour ghép đoàn và gia đình.</li>
+                <p class="fw-semibold" style="font-size: 20px;">Thời gian áp dụng:</p>
+                <p class="fw-normal">Bắt đầu: 20-5-2024</p>
+                <p class="fw-normal">Kết thúc: 31-08-2024</p>
+                <p class="fw-normal">Nhanh tay đặt tour ngay hôm nay để tận hưởng kỳ nghỉ tuyệt vời tại Việt Nam với giá
+                    cực kỳ hấp dẫn. Hãy liên hệ với chúng tôi để biết thêm chi tiết và đặt chỗ!</p>
+                <p class="fw-semibold" style="font-size: 20px;">Mã Khuyến Mãi:</p>
+                <div class="promo-code">
+                    <code>ANHMINHNE</code>
+                </div>
+                <div class="note">
+                    <p class="fw-semibold" style="font-size: 20px;">*Lưu ý:</p>
+                    <ul>
+                        <li class="fw-normal" style="font-size: 16px;">Mã khuyến mãi không được áp dụng cùng với các
+                            chương trình khuyến mãi khác.</li>
+                        <li class="fw-normal" style="font-size: 16px;">Vui lòng nhập mã khuyến mãi tại bước thanh toán
+                            để được giảm giá.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="scri.js"></script>
+</body>
+
+</html>

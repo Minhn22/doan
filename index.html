@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css" />
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Notification</title>
+</head>
+
+<body>
+
+    <div class="d-flex p-3">
+        <div class="col-2 d-flex mt-2">
+            <h3 class="text-warning">Dash</h3>
+            <h3>Stack</h3>
+        </div>
+        <div class="d-flex col-8"><input class="rounded border p-2" type="search" id="Search" name="Search"
+                placeholder="Search">
+            <div class="rounded border align-content-center p-2"><box-icon name='search-alt-2'></box-icon></div>
+        </div>
+        <div class="col-2 d-flex">
+            <img class="rounded-circle"
+                src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/441896982_468941275705779_8833872038159045775_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHWf2-V7Q_xvNgsmpMzxECp9W3zwU2XQ4b1bfPBTZdDhgZl-k3GcXU2XyUoYQ1JeWSN9rj2gZAI6YbC0zqrbH46&_nc_ohc=Qblm2en8QaoQ7kNvgFPYFH_&_nc_ht=scontent.fsgn5-11.fna&oh=00_AYAuKh_-44NKRGhpbF94v-OZl4Q9z3eggOtdEyFY71iEqQ&oe=665290DC"
+                alt="alt" style="width: 40px; height: 40px" />
+            <p class="text-center align-content-center m-0 px-2">Nguyen Phuoc Chung</p>
+            <div class="align-content-center mt-2"><box-icon name='exit'></box-icon></div>
+        </div>
+    </div>
+    <div class="d-flex">
+        <div class="col-2 bg-white p-3 border" id="menu">
+            <div class="float-end" id="menu_icon_dashboard" onclick="toggleMenu()"><box-icon name='menu'></box-icon>
+            </div>
+
+            <div class="d-flex space">
+                <div class="icons"><box-icon type='solid' name='dashboard'></box-icon></div>
+                <p><a href="#">DASHBOARD</a></p>
+            </div>
+            <div class="d-flex">
+                <div class="icons"><box-icon type='solid' name='grid'></box-icon></div>
+                <p><a href="#">MANAGE TOUR</a></p>
+            </div>
+            <div class="d-flex space">
+                <div class="icons"><box-icon name='happy-heart-eyes'></box-icon></div>
+                <p><a href="#"> FAVORITES</a></p>
+            </div>
+            <div class="d-flex">
+                <div class="icons"><box-icon name='messenger' type='logo'></box-icon></div>
+                <p><a href="#"> MESSENGER</a></p>
+            </div>
+            <div class="d-flex space">
+                <div class="icons"><box-icon name='list-check'></box-icon></div>
+                <p><a href="#"> ORDER LIST</a></p>
+            </div>
+            <div class="d-flex active-page">
+                <div class="icons"><box-icon name='bell-ring' type='solid'></box-icon></div>
+                <p><a href="./index.html"> NOTIFICATION</a></p>
+
+            </div>
+            <hr class="space" />
+            <div class="d-flex">
+                <div class="icons"><box-icon name='user'></box-icon></div>
+                <p><a href="#">MANAGE USER</a> </p>
+            </div>
+            <div class="d-flex space">
+                <div class="icons"><box-icon name='user-circle' type='solid'></box-icon></div>
+                <p> <a href="#">PROFILE</a></p>
+            </div>
+            <div class="d-flex">
+                <div class="icons"><box-icon name='contact' type='solid'></box-icon></div>
+                <p><a href="ManageContact.jsp">MANAGE CONTACT</a></p>
+            </div>
+        </div>
+        <div class="col-10 bg-light p-3 border" id="list">
+            <div id="menu_icon" onclick="toggleMenu()"><box-icon name='menu'></box-icon></div>
+            <div class="d-flex justify-content-center ">
+                <button class="btn btn-primary ">
+                    Add New Notification
+                </button>
+            </div>
+            <div class="col-4 d-flex">
+                <label for="notification-date" class="form-label"></label>
+                <input type="date" id="notification-date" class="form-control mx-2" />
+                <label for="notification-status" class="form-label"></label>
+                <select id="notification-status" class="form-select">
+                    <option value="completed">Status</option>
+                    <option value="completed">Active</option>
+                    <option value="canceled">Expired</option>
+                </select>
+            </div>
+            <br>
+
+
+            <div class=" if bg-white p-2 border roundeds row">
+                <div class="custom-circle col-1 me-2 ms-2"></div>
+                <div class="col-1 d-flex me-2">
+                    <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/428618442_806449861522386_6734829449162052319_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHSrf_iINydmp02Jw7c9GNjRkH1iDlkGGBGQfWIOWQYYGyKEwiDYNLQpACGBQoOopJ9yvADylKkjA2Ot5p7J44v&_nc_ohc=HKzKTFIM5rkQ7kNvgFfVYlN&_nc_ht=scontent.fsgn5-11.fna&oh=00_AYBMbDARgTRt93cQMjNExsy0M75z0Unx-zSKQUIeX7NQTw&oe=665354B9"
+                        alt="">
+                </div>
+                <div class="col-10 d-flex" id="content">
+                    <a style="text-decoration: none;" href="./Chitiet.html">
+                        <div class="col-10">
+                            <h3>Khám phá đất nước xinh đẹp</h3>
+                            <p class="truncate">hgdnjflgnkjds fbkvjd kfjv dkjfvnksdjfbnklsdgnkb sk bjkdfhbnksjd vkjdsf
+                                vkjdsfnkj dfghdsfgbdsfjgndsknfgdnskfjgb sdfjkgnkdjsfngjkdngkjsdfnjgs</p>
+
+                            <p style="font-size: 11px;">10:00 20-05-2024</p>
+                        </div>
+                    </a>
+                    <div class="if  p-2 d-flex edit-delete-buttons col-2">
+                        <button class=" nte btn mx-3">Edit</button>
+                        <button class=" ntd btn mx-3">Delete</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class=" if bg-white p-2 border roundeds row">
+                <div class="custom-circle col-1 me-2 ms-2"></div>
+                <div class="col-1 d-flex me-2">
+                    <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/428618442_806449861522386_6734829449162052319_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHSrf_iINydmp02Jw7c9GNjRkH1iDlkGGBGQfWIOWQYYGyKEwiDYNLQpACGBQoOopJ9yvADylKkjA2Ot5p7J44v&_nc_ohc=HKzKTFIM5rkQ7kNvgFfVYlN&_nc_ht=scontent.fsgn5-11.fna&oh=00_AYBMbDARgTRt93cQMjNExsy0M75z0Unx-zSKQUIeX7NQTw&oe=665354B9"
+                        alt="">
+                </div>
+                <div class="col-10 d-flex" id="content">
+                    <div class="col-10">
+                        <h3>Khám phá đất nước xinh đẹp</h3>
+                        <p class="truncate">hgdnjflgnkjds fbkvjd kfjv dkjfvnksdjfbnklsdgnkb sk bjkdfhbnksjd vkjdsf
+                            vkjdsfnkj dfghdsfgbdsfjgndsknfgdnskfjgb sdfjkgnkdjsfngjkdngkjsdfnjgs</p>
+
+                        <p style="font-size: 11px;">10:00 20-05-2024</p>
+                    </div>
+                    <div class="if  p-2 d-flex edit-delete-buttons col-2">
+                        <button class=" nte btn mx-3">Edit</button>
+                        <button class=" ntd btn mx-3">Delete</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class=" if bg-white p-2 border roundeds row">
+                <div class="custom-circle col-1 me-2 ms-2"></div>
+                <div class="col-1 d-flex me-2">
+                    <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/428618442_806449861522386_6734829449162052319_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHSrf_iINydmp02Jw7c9GNjRkH1iDlkGGBGQfWIOWQYYGyKEwiDYNLQpACGBQoOopJ9yvADylKkjA2Ot5p7J44v&_nc_ohc=HKzKTFIM5rkQ7kNvgFfVYlN&_nc_ht=scontent.fsgn5-11.fna&oh=00_AYBMbDARgTRt93cQMjNExsy0M75z0Unx-zSKQUIeX7NQTw&oe=665354B9"
+                        alt="">
+                </div>
+                <div class="col-10 d-flex" id="content">
+                    <div class="col-10">
+                        <h3>Khám phá đất nước xinh đẹp</h3>
+                        <p class="truncate">hgdnjflgnkjds fbkvjd kfjv dkjfvnksdjfbnklsdgnkb sk bjkdfhbnksjd vkjdsf
+                            vkjdsfnkj dfghdsfgbdsfjgndsknfgdnskfjgb sdfjkgnkdjsfngjkdngkjsdfnjgs</p>
+
+                        <p style="font-size: 11px;">10:00 20-05-2024</p>
+                    </div>
+                    <div class="if  p-2 d-flex edit-delete-buttons col-2">
+                        <button class=" nte btn mx-3">Edit</button>
+                        <button class=" ntd btn mx-3">Delete</button>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class=" if bg-white p-2 border roundeds row">
+                <div class="custom-circle col-1 me-2 ms-2"></div>
+                <div class="col-1 d-flex me-2">
+                    <img src="https://scontent.fsgn5-11.fna.fbcdn.net/v/t39.30808-6/428618442_806449861522386_6734829449162052319_n.jpg?stp=dst-jpg_p526x296&_nc_cat=1&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeHSrf_iINydmp02Jw7c9GNjRkH1iDlkGGBGQfWIOWQYYGyKEwiDYNLQpACGBQoOopJ9yvADylKkjA2Ot5p7J44v&_nc_ohc=HKzKTFIM5rkQ7kNvgFfVYlN&_nc_ht=scontent.fsgn5-11.fna&oh=00_AYBMbDARgTRt93cQMjNExsy0M75z0Unx-zSKQUIeX7NQTw&oe=665354B9"
+                        alt="">
+                </div>
+                <div class="col-10 d-flex" id="content">
+                    <div class="col-8">
+                        <h3>Khám phá đất nước xinh đẹp</h3>
+                        <p class="truncate">hgdnjflgnkjds fbkvjd kfjv dkjfvnksdjfbnklsdgnkb sk bjkdfhbnksjd vkjdsf
+                            vkjdsfnkj dfghdsfgbdsfjgndsknfgdnskfjgb sdfjkgnkdjsfngjkdngkjsdfnjgs</p>
+
+                        <p style="font-size: 11px;">10:00 20-05-2024</p>
+
+                    </div>
+                    <div class="col-2"> <img id="imge"
+                            src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRrlNUWqL8Px-CuefDTIW47EdQ6hzV7J6zhV8b6cXf5HP3wUCZs"
+                            alt="">
+                    </div>
+                    <div class="if  p-2 d-flex edit-delete-buttons col-2">
+                        <button class=" nte btn mx-3">Edit</button>
+                        <button class=" ntd btn mx-3">Delete</button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div id="deleteOverlay" class="custom-overlay">
+                <div id="deletePopup" class="custom-popup">
+                    <p>Are you sure</p>
+                    <button id="confirmDelete">Yes</button>
+                    <button id="cancelDelete">No</button>
+                </div>
+            </div>
+            <div id="addNotificationOverlay" class="add-notification-overlay">
+                <div id="addNotificationPopup" class="add-notification-popup">
+                    <h2>Add New Notification</h2>
+                    <form id="addNotificationForm">
+                        <div class="mb-3">
+                            <label for="notificationTitle" class="form-label">Title</label>
+                            <input type="text" id="notificationTitle" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notificationContent" class="form-label">Content</label>
+                            <textarea id="notificationContent" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notificationDate" class="form-label">Date</label>
+                            <input type="date" id="notificationDate" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notificationStatus" class="form-label">Status</label>
+                            <select id="notificationStatus" class="form-select" required>
+                                <option value="active">Active</option>
+                                <option value="expired">Expired</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="notificationImage" class="form-label">Image</label>
+                            <input type="file" id="notificationImage" class="form-control" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" id="cancelAddNotification" class="btn btn-secondary">Cancel</button>
+                    </form>
+                </div>
+            </div>
+            <div id="editNotificationOverlay" class="edit-notification-overlay">
+                <div id="editNotificationPopup" class="edit-notification-popup">
+                    <h2>Edit Notification</h2>
+                    <form id="editNotificationForm">
+                        <div class="mb-3">
+                            <label for="editNotificationTitle" class="form-label">Title</label>
+                            <input type="text" id="editNotificationTitle" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editNotificationContent" class="form-label">Content</label>
+                            <textarea id="editNotificationContent" class="form-control" rows="3" required></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editNotificationDate" class="form-label">Date</label>
+                            <input type="date" id="editNotificationDate" class="form-control" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editNotificationStatus" class="form-label">Status</label>
+                            <select id="editNotificationStatus" class="form-select" required>
+                                <option value="active">Active</option>
+                                <option value="expired">Expired</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="editNotificationImage" class="form-label">Image</label>
+                            <input type="file" id="editNotificationImage" class="form-control" accept="image/*">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Save</button>
+                        <button type="button" id="cancelEditNotification" class="btn btn-secondary">Cancel</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </div>
+
+    </div>
+    <script src="./make.js"></script>
+</body>
+<script>
+    document.querySelectorAll('.truncate').forEach(function (content) {
+        if (content.innerText.length > 10) {
+            content.innerText = content.innerText.substring(0, 130) + '...';
+        }
+
+    });
+    function toggleMenu() {
+        var element = document.getElementById('list');
+        var menu = document.getElementById("menu");
+        var menu_icon_dashboard = document.getElementById("menu_icon_dashboard");
+        var menu_icon = document.getElementById("menu_icon");
+        //menu_icon là icon đứng một mình //menu__icon là chứ dashboard // menu là dashboard // list là list
+        if (menu_icon.style.display === "block") {// hien dashboard
+            menu_icon_dashboard.style.display = "block";
+            menu.style.display = "block";
+            element.classList.replace('col-12', 'col-10');
+            menu_icon.style.display = "none"
+
+        }
+        else {// ẩn dashboard
+            menu_icon_dashboard.style.display = "none";
+            menu.style.display = "none";
+            element.classList.replace('col-10', 'col-12');
+            menu_icon.style.display = "block"
+
+        }
+    }
+</script>
+
+</html>

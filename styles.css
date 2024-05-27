@@ -1,0 +1,194 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.icons {
+    margin-right: 15px;
+}
+
+.space {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.search {
+    position: absolute;
+    left: 0;
+}
+
+input {
+    position: relative;
+}
+
+.tag-dashboard {
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.increase {
+    width: 20px;
+    height: 20px;
+}
+
+.up-to {
+    padding-left: 5px;
+}
+
+.point {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline #0a53be;
+}
+
+.active-page a {
+    border-bottom: 2px solid rgb(13, 17, 244);
+    padding-bottom: 2px;
+}
+
+.btn-primary {
+    width: 400px;
+    background-color: rgb(13, 165, 192);
+    border-radius: 5px;
+    border: 2px solid rgb(17, 180, 186);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+#menu_icon {
+    display: none;
+}
+
+#im {
+    width: 100%;
+    height: 15%;
+    object-fit: cover;
+}
+
+.container {
+    margin: 0 auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+
+.note {
+    margin-top: 20px;
+    background: #f9f9f9;
+    padding: 10px;
+    border-left: 5px solid #d9534f;
+}
+
+.note p {
+    margin: 0 0 10px 0;
+}
+
+.note ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.note ul li {
+    list-style: disc;
+}
+
+
+.back-button,
+.share-button {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.title-section {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.title-section h1 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #1a73e8;
+}
+
+
+
+.sale-label {
+    background-color: #ffc107;
+    padding: 0.25rem 0.5rem;
+    border-radius: 0.25rem;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.date {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.details {
+    display: flex;
+    gap: 1rem;
+}
+
+
+
+.share-button {
+    cursor: pointer;
+    width: 10px;
+    height: 10px;
+}
+
+.promo-code {
+    background-color: #f8f9fa;
+    padding: 0.5rem;
+    border: 1px solid #dee2e6;
+    border-radius: 0.25rem;
+    display: inline-block;
+}
+
+.search-bar {
+    align-items: center;
+}
+
+.search-icon {
+    cursor: pointer;
+   
+}

@@ -1,0 +1,355 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.icons {
+    margin-right: 15px;
+}
+
+.space {
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.search {
+    position: absolute;
+    left: 0;
+}
+
+input {
+    position: relative;
+}
+
+.tag-dashboard {
+    border-radius: 5px;
+    background: #ffffff;
+}
+
+img {
+    width: 60px;
+    height: 60px;
+}
+
+.increase {
+    width: 20px;
+    height: 20px;
+}
+
+.up-to {
+    padding-left: 5px;
+}
+
+.point {
+    width: 15px;
+    height: 15px;
+    margin-top: 5px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: underline #0a53be;
+}
+
+.btn-primary {
+    width: 400px;
+    background-color: rgb(13, 165, 192);
+    border-radius: 5px;
+    border: 2px solid rgb(17, 180, 186);
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.if {
+    border-radius: 10px;
+}
+
+.if img {
+    border-radius: 7px;
+    width: 163px;
+    height: 100px;
+}
+
+#menu_icon {
+    display: none;
+}
+
+
+
+.nte {
+    width: 100px;
+    background-color: rgb(8, 240, 186);
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nte:hover {
+    width: 100px;
+    background-color: #1ACC2C;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.ntd {
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #d1d3d6;
+}
+
+.ntd:hover {
+    width: 100px;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: #D62121;
+    color: white;
+}
+
+.edit-delete-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.edit-delete-buttons button {
+    margin-right: 5px;
+}
+
+.edit-delete-buttons button:first-child {
+    margin-right: 20px;
+}
+
+.custom-circle {
+    width: 16px;
+    height: 16px;
+    background-color: #00FA46;
+    border-radius: 100%;
+
+}
+
+.last-notification {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    width: 900px;
+    height: 111px;
+    left: 285px;
+    top: 615px;
+    background: #D9D9D9;
+    opacity: 0.6;
+    border-radius: 10px;
+    z-index: 1;
+}
+
+.expired-text {
+    position: absolute;
+    width: 179px;
+    height: 58px;
+    left: 600px;
+    top: 20px;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 58px;
+    color: #000000;
+    z-index: 2;
+}
+
+.red {
+    width: 16px;
+    height: 16px;
+    background-color: #F81010;
+    border-radius: 100%;
+}
+
+.custom-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.custom-popup {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.custom-popup p {
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#confirmDelete,
+#cancelDelete {
+    font-size: 24px;
+    padding: 12px 30px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+}
+
+#confirmDelete {
+    background-color: red;
+    color: white;
+}
+
+#cancelDelete {
+    background-color: black;
+    color: white;
+    margin-left: 50px;
+}
+
+/* Add Notification Popup Overlay */
+.add-notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Popup Content */
+.add-notification-popup {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.add-notification-popup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.add-notification-popup .form-label {
+    margin-top: 10px;
+    text-align: left;
+    display: block;
+    font-weight: bold;
+}
+
+.add-notification-popup .form-control,
+.add-notification-popup .form-select {
+    width: 100%;
+}
+
+.add-notification-popup .btn {
+    margin-top: 20px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.add-notification-popup .btn-primary {
+    background-color: rgb(13, 165, 192);
+    border-radius: 5px;
+    border: 2px solid rgb(17, 180, 186);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.add-notification-popup .btn-secondary {
+    background-color: grey;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.edit-notification-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+/* Popup Content */
+.edit-notification-popup {
+    background: white;
+    padding: 50px;
+    border-radius: 15px;
+    text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.edit-notification-popup h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.edit-notification-popup .form-label {
+    margin-top: 10px;
+    text-align: left;
+    display: block;
+}
+
+.edit-notification-popup .form-control,
+.edit-notification-popup .form-select {
+    width: 100%;
+}
+
+.edit-notification-popup .btn {
+    margin-top: 20px;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.edit-notification-popup .btn-primary {
+    background-color: rgb(13, 165, 192);
+    border-radius: 5px;
+    border: 2px solid rgb(17, 180, 186);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.edit-notification-popup .btn-secondary {
+    background-color: grey;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.active-page a {
+    border-bottom: 2px solid rgb(13, 17, 244);
+    padding-bottom: 2px;
+}
+
+.edit-delete-buttons-right {
+    justify-content: right;
+}
+
+
+#imge {
+    width: 60%;
+    height: 60%;
+    margin-top: 30px;
+}
